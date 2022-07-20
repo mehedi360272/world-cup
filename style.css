@@ -3,3 +3,13 @@
     font-weight: 700;
     line-height: 1.2;
 }
+
+.hero {
+    background: linear-gradient(90deg, #2B0849, #863EB0);
+    color: white;
+    padding: 100px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
