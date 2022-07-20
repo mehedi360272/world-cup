@@ -4,6 +4,14 @@
     margin: 0;
 }
 
+.H-section {
+    padding-top: 50px;
+}
+
+.half {
+    width: 50%;
+}
+
 .title {
     font-size: 70px;
     font-weight: 700;
@@ -37,4 +45,9 @@
     overflow: hidden;
     border: 2px solid #8c290a;
     background-color: #ff0000;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1000;
 }
