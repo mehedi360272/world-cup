@@ -5,11 +5,30 @@
 }
 
 .hero {
-    background: linear-gradient(90deg, #2B0849, #863EB0);
+    background: linear-gradient(90deg, #5f5353, #ffffff);
     color: white;
     padding: 100px;
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.H-subtitle {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.btn {
+    position: relative;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    padding: 16px 25px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid #8c290a;
+    background-color: #ff0000;
 }
