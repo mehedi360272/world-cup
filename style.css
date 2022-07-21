@@ -140,7 +140,7 @@ main {
 }
 
 .buttons {
-    background: #161616;
+    background: #5b3180;
     width: 400px;
     padding: 30px;
     border-radius: 10px;
@@ -262,4 +262,71 @@ button {
 
 .ms-30 {
     margin-left: 30px;
+}
+
+footer {
+    background-color: #2B0849;
+    padding: 90px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.line {
+    height: 1px;
+    background-color: #FFFFFF1A;
+    margin: 20px 0;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.footer-menu a {
+    color: #B9B9B9;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-holder {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: navajowhite;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.text-center.all-holder {
+    display: none;
+    margin-top: 60px;
 }
