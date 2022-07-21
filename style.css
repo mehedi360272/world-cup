@@ -1,11 +1,44 @@
+/* --------------------------------------------- */
+/* universal css */
+/* --------------------------------------------- */
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
 
-.H-section {
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+img {
+    transition: all 0.5s linear;
+}
+
+
+/* ------------------------------------------------ */
+/* hero section */
+/* ------------------------------------------------ */
+
+.hero-section {
     padding-top: 50px;
+}
+
+.hero {
+    background: linear-gradient(90deg, #2B0849, #b3afb5);
+    color: white;
+    padding: 100px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .half {
@@ -18,17 +51,7 @@
     line-height: 1.2;
 }
 
-.hero {
-    background: linear-gradient(90deg, #5f5353, #ffffff);
-    color: white;
-    padding: 100px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.H-subtitle {
+.hero-subtitle {
     font-size: 18px;
     margin: 20px 0;
 }
@@ -43,11 +66,200 @@
     font-size: 20px;
     border-radius: 5px;
     overflow: hidden;
-    border: 2px solid #8c290a;
-    background-color: #ff0000;
+    border: 2px solid #bf340a;
+    background-color: #bf340a;
 }
 
 .btn span {
     position: relative;
     z-index: 1000;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 51%;
+    height: 100%;
+    background-color: #bf340a;
+    top: 0;
+    left: 0;
+    transition: all 0.2s linear;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #bf340a;
+    top: 0;
+    right: 0;
+    transition: all 0.2s linear;
+}
+
+.btn:hover {
+    color: #ffffff;
+    transition: 0.4s;
+    background-color: transparent;
+}
+
+.btn:hover::before {
+    transform: translate(200%);
+}
+
+.btn:hover::after {
+    transform: translate(200%);
+}
+
+.hero-image img {
+    width: 70%;
+    padding-left: 100px;
+    display: block;
+    margin: auto;
+
+}
+
+.hero:hover .hero-image img {
+    transform: rotate(10deg) scale(1.2);
+}
+
+/* ------------------------------------------------ */
+/* main section */
+/* ------------------------------------------------ */
+
+main {
+    padding: 90px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.a-start {
+    align-items: flex-start;
+}
+
+.buttons {
+    background: #161616;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 312px;
+}
+
+.menu-btn {
+    background: white;
+    display: block;
+    border-radius: 10px;
+    padding: 17px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #161616;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-btn span {
+    position: relative;
+    z-index: 10;
+}
+
+.menu-btn::before {
+    content: "";
+    position: absolute;
+    width: 51%;
+    height: 100%;
+    background-color: #bf340a;
+    top: 0;
+    left: 200%;
+    transition: all 0.2s linear;
+}
+
+.menu-btn::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #bf340a;
+    top: 0;
+    right: -100%;
+    transition: all 0.2s linear;
+}
+
+.menu-btn.active {
+    background-color: #bf340a;
+    color: white;
+}
+
+.menu-btn:hover {
+    color: white;
+}
+
+.menu-btn:hover::before {
+    left: 0;
+}
+
+.menu-btn:hover::after {
+    right: 0;
+}
+
+.my-30 {
+    margin: 30px 0;
+}
+
+.blogs {
+    padding-left: 24px;
+    width: calc(100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+
+.blog {
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+    overflow: hidden;
+}
+
+.blog:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.blog-body {
+    padding: 15px 20px;
+}
+
+.blog-img {
+    width: 100%;
+}
+
+button {
+    border: unset;
+}
+
+.blog-button {
+    border: 1px solid #161616;
+    background: transparent;
+    font-weight: 500;
+    padding: 4px 17px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.item {
+    color: #161616B2;
+    font-weight: 400;
+}
+
+.ms-30 {
+    margin-left: 30px;
 }
